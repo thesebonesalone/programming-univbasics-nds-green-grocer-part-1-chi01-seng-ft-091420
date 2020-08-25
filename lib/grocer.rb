@@ -27,6 +27,7 @@ def consolidate_cart(cart)
     end
     if duplicate == false
       new_cart.push(index)
+      puts new_cart[-1]
       new_cart[-1][:count => 1]
     end
   end
