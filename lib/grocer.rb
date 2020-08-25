@@ -19,15 +19,16 @@ def consolidate_cart(cart)
     name = index[:item]
     duplicate = false
     new_cart.each do |index2|
+      puts "looping"
       if index2[:item] == name
         index2[:count] += 1
         duplicate = true
       end
     end
-      if duplicate == false
-        new_cart[new_cart.length] = index
-        new_cart[new_cart.length -1][:count => 1]
-      end
+    if duplicate == false
+      new_cart[new_cart.length] = index
+      new_cart[new_cart.length -1][:count => 1]
+    end
   end
   return new_cart
 end
