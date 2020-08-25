@@ -8,6 +8,7 @@ def find_item_by_name_in_collection(name, collection)
       return index
     end
   end
+  return nil
 
 end
 
