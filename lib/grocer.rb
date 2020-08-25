@@ -21,7 +21,7 @@ def consolidate_cart(cart)
     new_cart.each do |index2|
       puts "looping"
       if index2[:item] == name
-        index2[:count] += 1
+        puts index2[:count]
         duplicate = true
       end
     end
