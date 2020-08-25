@@ -27,11 +27,11 @@ def consolidate_cart(cart)
        puts index2[:count]
         duplicate = true
       end
+    end
       if duplicate == false
         new_cart[new_cart.length] = index
         new_cart[new_cart.length -1][:count => 1]
       end
-    end
     return new_cart
   end
   
